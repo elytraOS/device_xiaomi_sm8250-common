@@ -8,6 +8,9 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
+# b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
+RELAX_USES_LIBRARY_CHECK := true
+
 COMMON_PATH := device/xiaomi/sm8250-common
 
 # A/B
